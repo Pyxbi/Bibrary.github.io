@@ -1,0 +1,278 @@
+<!--  RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023B
+  Assessment: Assignment 1
+  Author: Pham Le Gia Huy
+  ID: S3975371
+  Acknowledgement: Acknowledge the resources that you use here.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibrary</title>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <header>
+        <!-- LOGO -->
+        <div class="logo-title">
+            <img src="logo/logobookstore1.jpeg" alt="logo book" width="50px" height="50px" >
+            <div class="logo">
+                <a style="color: black;" href="homepage.html">Bibrary</a>
+            </div>
+        </div>
+        <div class="hamberger">☰</div>
+        <nav class="navbar">
+            <!-- NAVIGATION MENU -->
+            <ul class="menu">
+                <li><a href="index.html">HomePage</a></li>
+                <li><a  href="homepage.html">Home</a></li>
+                <li><a  href="subpage1.html#shonen">Shonen</a></li>
+                <li><a  href="subpage1.html#seinen">Seinen</a></li>
+                <li><a href="contactpage.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="box">
+            <div class="recommendbox">
+                <div class="recommendcontainer">
+                    <div class="row"> 
+                        <img class="book-picture" src="anotherbook/chainsawman.jpeg" alt="chainsawman book">
+                        <div class="info">
+                            <p class="name">Chainsawman</p>
+                            <p class="author">by Tatsuki Fujimoto</p>
+                            <div class="rating">⭐ 4.5</div>
+                            <button class="reading-button">
+                                <a href="bookdetail/chansawman.html">Read</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <strong>Description</strong>
+                        <div style="color: rgb(150, 150, 150);">
+                            Chainsaw Man follows the story of Denji, an impoverished young man who makes a contract that fuses his body with that of a dog-like devil named Pochita, granting him the ability to transform parts of his body into chainsaws.
+                        </div>
+                    </div>
+                </div>
+                <div class="recommendcontainer">
+                    <div class="row"> 
+                        <img class="book-picture" src="anotherbook/treasureisland.jpeg" alt="treasure island book">
+                        <div class="info">
+                            <p class="name">Treasure Island</p>
+                            <p class="author">by Robert Louis Stevenson</p>
+                            <div class="rating">⭐ 4.9</div>
+                            <button class="reading-button">
+                                <a href="bookdetail/treasureislane.html">Read</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <strong>Description</strong>
+                        <div style="color: rgb(150, 150, 150);">
+                            The story is about Jim, a young boy who goes in search of treasure after finding a treasure map. Jim faces shipwreck, a pirate mutiny, and sword fights. Jim's tale is a rags-to-riches story of a young boy who overcomes the odds.
+                        </div>
+                    </div>
+                </div>
+                <div class="recommendcontainer">
+                    <div class="row"> 
+                        <img class="book-picture" src="anotherbook/onethousandandonenights.jpg" alt=" a book">
+                        <div class="info">
+                            <p class="name">One Thousand and...</p>
+                            <p class="author">by Antoine Galland</p>
+                            <div class="rating">⭐ 4.0</div>
+                            <button class="reading-button">
+                                <a href="bookdetail/onethousand.html">Read</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <strong>Description</strong>
+                        <div style="color: rgb(150, 150, 150);">
+                            The Thousand and One Nights, also know as The Arabian Nights, or Alf laylah wa laylah in Arabic, is a collection of stories from unknown dates and authors taking place largely in the Middle East
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <hr style="margin-top: 70px;">
+            <div class="title">
+                <p>Popular Books</p>
+            </div>
+            <div class="column">
+                <div class="book-container">
+                    <div id="shonen" class="manga-row">
+                        <a style="margin-bottom: 20px; color: rgb(29, 155, 240);font-size: large;" href="subpage1.html">Shonen</a>
+                        <div class="manga">
+                            <div class="row"> 
+                                <img class="book-image" src="manga/onepiece.jpg">
+                                <div class="info1">
+                                    <p class="name">One Piece</p>
+                                    <p class="reader">764k reads</p>
+                                    <div class="rating">⭐ 5.0</div>
+                                    <button class="reading-button">
+                                        <a href="bookdetail/onepiece.html">Read</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row"> 
+                                <img class="book-image" src="manga/naruto.jpg">
+                                <div class="info1">
+                                    <p class="name">Naruto</p>
+                                    <p class="reader">902k reads</p>
+                                    <div class="rating">⭐ 4.9</div>
+                                    <button class="reading-button">
+                                        <a href="bookdetail/naruto.html">Read</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row"> 
+                                <img class="book-image" src="manga/jujutsu-kaisen.jpg">
+                                <div class="info1">
+                                    <p class="name">Jujutsu kaisen</p>
+                                    <p class="reader">611k reads</p>
+                                    <div class="rating">⭐ 4.7</div>
+                                    <button class="reading-button">
+                                        <a href="bookdetail/jujutsukaisen.html">Read</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="seinen" class="sciencefiction-row">
+                        <a style="margin-bottom: 20px; color:rgb(29, 155, 240);font-size: large;" href="subpage2.html">Seinen</a>
+                        <div class="sciencefiction">
+                            <div class="row"> 
+                                <img class="book-image" src="manga/dragonball.jpeg">
+                                <div class="info1">
+                                    <p class="name">Dragonball</p>
+                                    <p class="reader">152k reads</p>
+                                    <div class="rating">⭐ 4.2</div>
+                                    <button class="reading-button">
+                                        <a href="bookdetail/dragonball.html">Read</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row"> 
+                                <img class="book-image" src="manga/myhearoacademia.jpg">
+                                <div class="info1">
+                                    <p class="name">My hero Acamedia</p>
+                                    <p class="reader">732k reads</p>
+                                    <div class="rating">⭐ 5.0</div>
+                                    <button class="reading-button">
+                                        <a href="bookdetail/myheroacademia.html">Read</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row"> 
+                                <img class="book-image" src="manga/tokyoghoul.jpg">
+                                <div class="info1">
+                                    <p class="name">Tokyo Ghoul</p>
+                                    <p class="reader">395k reads</p>
+                                    <div class="rating">⭐ 4.0</div>
+                                    <button class="reading-button">
+                                        <a href="bookdetail/tokyoghoul.html">Read</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <p>Video introduction</p>
+                    <iframe width="360" height="205" src="https://www.youtube.com/embed/pRTWFqhEDeo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer" class="footer footer-desktop">
+        <div class="footer-row">
+            <div class="footer-logo">
+                <img src="logo/logobookstore1.jpeg" alt="book logo" width="80px" height="100px">
+            </div>
+            <div class="footer-categories">
+                <span class="title-footer">Categories</span>
+                <ul class="footer-categories-links">
+                    <li>
+                        <img src="https://www.glyphicons.com/img/glyphicons/halflings/2x/glyphicons-halflings-38-book@2x.png"
+                            alt="book logo" width="15px" height="18px">
+                        <a href="subpage1.html">Manga</a>
+                    </li>
+                    <li style="margin-top: 10px;">
+                        <img src="https://www.glyphicons.com/img/glyphicons/halflings/2x/glyphicons-halflings-38-book@2x.png"
+                            alt="book logo" width="15px" height="18px">
+                        <a href="subpage2.html">Fiction</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-about-us">
+                <span class="title-footer">About Us</span>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100017194786318" target="_blank">Who We Are</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-resources">
+                <span class="title-footer">Resources</span>
+                <ul>
+                    <li>
+                        <a style="margin-bottom: 10px;" href="contactpage.html">Help</a>
+                    </li>
+                    <li>
+                        <a href="contactpage.html">Contact</a>
+                    </li>
+            </div>
+            <div class="footer-find-us">
+                <span class="title-footer">Find Us</span>
+                <ul>
+                    <li>
+                        <a class="instagram" href="https://www.instagram.com/emhuymoime/" target="_blank">
+                            <img src="https://cdn-icons-png.flaticon.com/128/1384/1384031.png" alt="instagram icon"
+                                width="35px" height="35px">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="facebook" href="https://www.facebook.com/profile.php?id=100017194786318"
+                            title="Facebook" target="_blank">
+                            <img src="https://cdn-icons-png.flaticon.com/128/747/747374.png" alt="facebook icon"
+                                width="35px" height="35px">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rule">
+            <hr>
+        </div>
+        <div class="footer-row footer-row-bottom">
+            <div class="footer-links">
+                <p>Copyright © 2023 HUYPHAM 💕</p>
+                <ul class="footer-links-list">
+                    <li>
+                        <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a>
+                        <span class="divider">|</span>
+                    </li>
+                    <li>
+                        <a href="https://policies.google.com/privacy?hl=en-US" target="blank">Privacy Policy</a>
+                        <span class="divider">|</span>
+                    </li>
+
+                    <li>
+                        <a href="https://www.google.com/help/attribution_maps/" target="_blank">Legal Notices &
+                            Trademarks</a>
+                    </li>
+                </ul>
+                <a href="" target="blank">
+                    <img class="footer-bottom-logo" alt="booklogo" src="logo/logobookstore1.jpeg">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

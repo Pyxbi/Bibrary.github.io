@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+.left-side{
+    border-radius: 10px;
+    float: left;
+    width: 70%;
+    background-color: rgba(203, 203, 203, 0.669);
+}
+.left-box{
+    padding-left: 70px;
+}
+.text-box{
+    padding-top: 150px;
+}
+.text-box h2{
+    font-size: 4.5em;
+    font-weight: 800;
+    line-height: 1em;
+}
+.text-box p{
+    color: #595959;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    line-height: 1.5;
+}
+.right-side{
+    border-radius: 10px;
+    
+    width: 50%;
+    background-image: linear-gradient(120deg, #66a6ff 0%, #89f7fe 100%);
+}
+.btn{
+    width: 140px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 40px;
+    border: solid;
+    border-width: thin;
+    background: #e7e7e7;
+    cursor: pointer;
+}
+.btn:hover{
+    color: aliceblue;
+    background-color: #595959;
+    transition:0.1s;
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+}
+.btn:hover a{
+    color: aliceblue;
+}
+.reading-book{
+    position: absolute;
+    bottom: 15%;
+    left: 48%;
+    mix-blend-mode: multiply;
+    filter: contrast(1);
+}
+
+.logo-person img{
+    width: 80px;
+    display: inline-block;
+}
+.our-community{
+    padding-top: 80px;
+    padding-bottom:15px; 
+    padding-left: 10px;
+}
+.community-box{
+    display: flex;
+    padding-bottom: 80px;
+}
+.community-collection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15px;
+}
+.community-collection p:nth-child(1){
+    font-size: x-large;
+    font-weight: 600;
+}
+.community-collection p:nth-child(2){
+    color: #595959;
+}
+h1{
+    padding-top: 20px;
+}
+@media screen and (min-width:768px) and (max-width:992px) {
+    .reading-book img{
+        width: 420px;
+        object-fit: contain;
+    }
+    .reading-book{
+        left: 41%;
+        bottom: 30%;
+
+    }   
+}
+@media screen and (max-width:767px) {
+    .left-box{
+        padding-left: 5px;
+    }
+    .text-box{
+        padding-top: 0px;
+    }
+    .text-box h2{
+        font-size: 3em;
+    }
+    .text-box p{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .logo-person img{
+        width: 40px;
+    }
+    .reading-book{
+        bottom: 26%;
+        left: 38%;
+    }
+    .reading-book img{
+        width: 250px;
+    }
+}
+
+

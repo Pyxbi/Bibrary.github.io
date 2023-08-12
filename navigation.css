@@ -1,0 +1,116 @@
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px 25px;
+}
+
+.logo-title {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+}
+
+.logo {
+    font-size: 40px;
+    color: black;
+}
+
+a {
+    color: rgb(29, 155, 240)
+}
+
+.hamberger {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: #237fdc;
+    display: none;
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: x-large;
+}
+.menu li{
+    padding: 14px 20px;
+    background-color: white;
+    color: rgb(29, 155, 240) ;
+}
+
+.menu li:hover {
+    background-color: rgb(29, 155, 240);
+    color: white;
+    border-radius: 5px;
+    transition: 0.1s;
+}
+.menu li a{
+    color: rgb(29, 155, 240);
+}
+
+.menu li:hover a{
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        display: block;
+        color: white;
+        z-index: 1;
+        position: relative;
+        background-color: lightblue;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 5px 20px;
+        background-color: #3587df;
+    }
+
+    .logo-title {
+        display: inline-flex;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .navbar li {
+        color: white;
+        font-size: 20px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    a {
+        color: white;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .hamberger {
+        display: inline-block;
+        position: absolute;
+        right: 10%;
+        margin-top: 15px;
+    }
+
+    .hamberger:hover+.navbar {
+        display: block;
+    }
+
+    .navbar:hover {
+        display: block;
+    }
+}
