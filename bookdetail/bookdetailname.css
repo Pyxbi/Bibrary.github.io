@@ -1,0 +1,236 @@
+body {
+    background: #f8f6f0;
+    color: #333333;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+.breadcrumb{
+    display: flex ;
+    flex-direction: row;
+    align-items: center;
+    color: #797979a8;
+    padding: 5px 0;
+    margin-left: 105px;
+    margin-right: 105px;
+}
+.breadcrumb-item{
+    text-decoration: none;
+    color: #797979a8;
+}
+.breadcrumb-item:hover{
+    text-decoration: underline;
+    color: rgb(116, 116, 125);
+}
+.icon{
+    margin-left: 5.5px;
+    margin-right: 8.5px;
+}
+.book-image{
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    padding-right: 50px;
+}
+.book-gallary{
+    display: inline-block;
+    list-style: outside none none;
+    padding-top: 50px;
+}
+.book-gallary img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    object-fit: contain;
+    line-height: 0;
+    margin-right: 8px;
+    padding-bottom: 40px;
+}
+.book-view-media{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.product-view{
+    width: 484px;
+}
+.book-detail{
+    width: calc(100% - 484px);
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+.book-name h1{
+    padding-left: 60px;
+    margin-top: -50px;
+}
+.author{
+    display: inline-block;
+    width: 60%;
+    padding-right: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 50px;
+}
+.publish{
+    display: inline-block;
+    width: 60%;
+    padding-right: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 5px;
+}
+.rating{
+    padding-top: 10px;
+}
+.price{
+    font-size: 32px;
+    line-height: 32px;
+    color: rgb(29, 155, 240);
+    font-family: 'Roboto',sans-serif !important;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.add-button{
+    cursor: pointer;
+    user-select: none;
+    height: 44px;
+    margin-left: 10px;
+    width: 220px;
+    font-weight: 700;
+    font-size: 1.1em;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background:rgb(29, 155, 240);
+    border: none;
+    transition: all 0.5s;
+}
+.add-button:hover {
+    background-color: #6fc5ff;
+    box-shadow: 0 0 20px #6fc5ff50;
+    transform: scale(1.1);
+  }
+  
+.add-button:active {
+    background-color: #3d94cf;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+  }
+.product{
+    padding: 16px 16px 25px 16px;
+    background-color: white;
+    display: flex;
+    border-radius: 8px;
+    width: 1230px;
+    margin: 0 auto;
+}
+.container-product{
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 50px;
+}
+
+.wrapper{
+    overflow: hidden;
+}
+.wrapper img{
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 400ms;
+}
+.wrapper:hover img{
+    transform: scale(1.2);
+}
+@media screen and (max-width:767px) {
+    .product{
+        align-items: center;
+        flex-direction: column;
+        width: auto;
+    }
+    .breadcrumb{
+        margin-left: 40px;
+    }
+    .product-view{
+        width: auto;
+    }
+    .book-detail{
+        display: inline-block;
+        margin-top: -15px;
+        padding-left: 0;
+    }
+    .book-view-media{
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: flex-start;
+    }
+    .book-detail{
+        width: auto;
+        padding-top: 0;
+    }
+    .book-gallary{
+        padding-top: 20px;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: row;
+        column-gap: 30px;
+    }
+    .book-detail div:nth-child(4){
+        display: none;
+    }
+    .price{
+        margin-left: 20px;
+    }
+    .author{
+        display: none;
+    }
+    .rating{
+        display: none;
+    }
+    .publish{
+        display: none;
+    }
+    .add-button{
+        margin-left: -15px;
+    }
+    .book-name{
+        margin-left: 25px;
+    }
+    .book-name h1{
+        margin-top: 0;
+    }
+}
+@media screen and (min-width:768px) and (max-width:992px) {
+    .book-detail div:nth-child(4){
+        padding-top: 10px;
+        width: 275px;
+    }
+    .book-detail{
+        padding-left: 35px
+    }
+    .book-image{
+        padding-right: auto;
+    }
+}
+@media screen and (min-width:992px) {
+    .breadcrumb{
+        margin-left: 330px;
+    }
+}

@@ -1,0 +1,246 @@
+<!--  RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023B
+  Assessment: Assignment 1
+  Author: Pham Le Gia Huy
+  ID: S3975371
+  Acknowledgement: Acknowledge the resources that you use here.-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="contactpage.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+    <header>
+        <!-- LOGO -->
+        <div class="logo-title">
+            <img src="logo/logobookstore1.jpeg" alt="logo book" width="50px" height="50px">
+            <div class="logo">
+                <a style="color: black;" href="homepage.html">Bibrary</a>
+            </div>
+        </div>
+        <div class="hamberger">☰</div>
+        <nav class="navbar">
+            <!-- NAVIGATION MENU -->
+            <ul class="menu">
+                <li><a href="index.html">HomePage</a></li>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="contactpage/contactpage.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container-contact">
+            <div>
+                <div class="contact-box">
+                    <div class="contact-info">
+                        <h3 style="font-size: 32px;font-weight: 700; margin-bottom: 0;" class="text">Contact Info</h3>
+                        <div style="display: flex;flex-direction: column;">
+                            <h3 style="margin-bottom: 5px;" class="text">Ho Chi Minh city</h3>
+                            <ul class="information">
+                                <li class="text">34 Street Name, City Name Here, United States</li>
+                                <li class="text">+1 (222) 345 6789</li>
+                                <li class="text">s3975371@rmit.edu.vn </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container-form">
+                        <div class="box-form">
+                            <h3 style="font-size: x-large;
+                            text-align: center;
+                            padding-bottom: 25px;">
+                            Send us a message
+                            </h3>
+                            <form class="contact-form" method="post" action="contactpage.html" id="contactForm"
+                                name="contactForm" enctype="multipart/form-data" onsubmit="return false">
+                                <div class="row">
+                                    <div class="form-label">
+                                        <label for="purpose">Purpose of contact</label>
+                                    </div>
+                                    <div class="form-label" style="width: 60%;">
+                                        <select required id="purpose" name="purpose">
+                                            <option value="">---</option>
+                                            <option value="sell">I want to sell books</option>
+                                            <option value="buy">I want to buy books</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-label">
+                                        <label for="name">Name</label>
+                                    </div>
+                                    <div class="form-label">
+                                        <input type="text" class="form-control" name="name" id="name"
+                                            placeholder="Enter your name">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-label">
+                                        <label for="email">Email</label>
+                                    </div>
+                                    <div class="form-label">
+                                        <input type="text" class="form-control" name="email" id="email"
+                                            placeholder="Enter your email">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-label">
+                                        <label for="phone">Your phone</label>
+                                    </div>
+                                    <div class="form-label">
+                                        <input required id="phone" type="tel" name="phone" pattern="[0-9]{9,13}"
+                                            title="Enter 9 to 13 digits" placeholder="Enter your phone">
+                                    </div>
+                                </div>
+                                <div class="row row1">
+                                    <div class="form-label">
+                                        <label>How can we contact you</label>
+                                    </div>
+                                    <div class="form-field">
+                                        <ol>
+                                            <li>
+                                                <input type="checkbox" id="contact_method_email" name="contact_methods"
+                                                    value="email">
+                                                <label for="contact_method_email">By email</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="contact_method_phone" name="contact_methods"
+                                                    value="phone">
+                                                <label for="contact_method_phone">By phone</label>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="row row1">
+                                    <div class="form-label">
+                                        <label>Do you want to receive our weekly newsletter</label>
+                                    </div>
+                                    <div class="form-field">
+                                        <ul>
+                                            <li>
+                                                <input type="radio" id="newsletter_yes" name="newsletter" value="yes"
+                                                    checked>
+                                                <label for="newsletter_yes">Yes</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="newsletter_no" name="newsletter" value="no">
+                                                <label for="newsletter_no">No</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label for="message">Message</label>
+                                        <textarea name="message" id="message" cols="30" rows="7"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div>
+                                        <input class="button" type="submit" value="Send Message">
+                                        <input class="button" value="Clear" type="reset">
+                                        <span class="submitting"></span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer" class="footer footer-desktop">
+        <div class="footer-row">
+            <div class="footer-logo">
+                <img src="logo/logobookstore1.jpeg" alt="book logo" width="80px" height="100px">
+            </div>
+            <div class="footer-categories">
+                <span class="title-footer">Categories</span>
+                <ul class="footer-categories-links">
+                    <li>
+                        <img src="https://www.glyphicons.com/img/glyphicons/halflings/2x/glyphicons-halflings-38-book@2x.png"
+                            alt="book logo" width="15px" height="18px">
+                        <a href="subpage1.html">Manga</a>
+                    </li>
+                    <li style="margin-top: 10px;">
+                        <img src="https://www.glyphicons.com/img/glyphicons/halflings/2x/glyphicons-halflings-38-book@2x.png"
+                            alt="book logo" width="15px" height="18px">
+                        <a href="subpage2.html">Fiction</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-about-us">
+                <span class="title-footer">About Us</span>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100017194786318" target="_blank">Who We Are</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-resources">
+                <span class="title-footer">Resources</span>
+                <ul>
+                    <li>
+                        <a style="margin-bottom: 10px;" href="contactpage/contactpage.html">Help</a>
+                    </li>
+                    <li>
+                        <a href="contactpage/contactpage.html">Contact</a>
+                    </li>
+            </div>
+            <div class="footer-find-us">
+                <span class="title-footer">Find Us</span>
+                <ul>
+                    <li>
+                        <a class="instagram" href="https://www.instagram.com/emhuymoime/" target="_blank">
+                            <img src="https://cdn-icons-png.flaticon.com/128/1384/1384031.png" alt="instagram icon"
+                                width="35px" height="35px">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="facebook" href="https://www.facebook.com/profile.php?id=100017194786318"
+                            title="Facebook" target="_blank">
+                            <img src="https://cdn-icons-png.flaticon.com/128/747/747374.png" alt="facebook icon"
+                                width="35px" height="35px">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rule">
+            <hr>
+        </div>
+        <div class="footer-row footer-row-bottom">
+            <div class="footer-links">
+                <p>Copyright © 2023 HUYPHAM 💕</p>
+                <ul class="footer-links-list">
+                    <li>
+                        <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a>
+                        <span class="divider">|</span>
+                    </li>
+                    <li>
+                        <a href="https://policies.google.com/privacy?hl=en-US" target="blank">Privacy Policy</a>
+                        <span class="divider">|</span>
+                    </li>
+
+                    <li>
+                        <a href="https://www.google.com/help/attribution_maps/" target="_blank">Legal Notices &
+                            Trademarks</a>
+                    </li>
+                </ul>
+                <a href="" target="blank">
+                    <img class="footer-bottom-logo" alt="booklogo" src="logo/logobookstore1.jpeg">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

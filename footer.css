@@ -1,0 +1,119 @@
+#footer {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background: #555;
+    padding: 30px 2.5vw 10px;
+}
+#footer .footer-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#footer .footer-row .footer-categories {
+    width: 425px;
+}
+#footer .title-footer {
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+#footer .footer-row .footer-categories-links {
+    width: 280px;
+}
+.footer-rule{
+    margin-top: 10px;
+}
+#footer .footer-links-list img{
+    display: none;
+}
+ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#footer li a .category-icon {
+    font-size: 20px;
+    margin-top: -3px;
+    margin-right: 12px;
+}
+#footer li a{
+    color: #bbb;
+    line-height: 21px;
+    padding: 2px 0;
+    display: inline-block;
+}
+#footer li a:hover{
+    color: aliceblue;
+}
+#footer .footer-row .footer-links-list .divider {
+    margin: 0 5px;
+}
+#footer .footer-row .footer-about-us, #footer .footer-row .footer-resources {
+    width: 135px;
+}
+#footer .title-footer {
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.footer-bottom-logo{
+    width:25px;
+    height:40px; 
+    margin-top: 10px;
+}
+#footer .footer-rule {
+    width: 100%;
+}
+#footer .footer-row-bottom {
+    max-width: 100%;
+}
+#footer .footer-row .footer-links {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: #bbb;
+    align-items: center;
+}
+#footer .footer-row .footer-links-list {
+    display: flex;
+    margin: 0 15px;
+}
+a{
+    text-decoration: none;
+}
+
+@media (max-width:768px) {
+      .footer-logo{
+        display: none;
+      }
+    #footer .footer-row{
+        width: auto;
+    }
+    #footer .footer-row .footer-categories {
+        display: none;
+    }
+    #footer .footer-row .footer-links {
+        flex-direction: column-reverse;
+    
+    }
+    .title-footer{
+        display: none;
+    }
+    .footer-resources{
+        display: none;
+    }
+    .footer-find-us ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .footer-bottom-logo{
+        display: none;
+    }
+}
